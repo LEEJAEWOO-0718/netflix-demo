@@ -5,7 +5,7 @@ import MoviePage from './pages/Movies/MoviePage';
 import Homepage from './pages/Homepage/Homepage';
 import MovieDetailPage  from './pages/MovieDetail/MovieDetailPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 // 홈페이지 /
 // 영화페이지(검색) /movie
@@ -20,7 +20,7 @@ function App() {
           <Route path=":id" element={<MovieDetailPage/>}/>
         </Route>
       </Route>
-      {/* <Route path="*" element={<NotFoundPage/>}/> */}
+      <Route path="*" element={<NotFoundPage/>}/>
     </Routes>
   );
 }
